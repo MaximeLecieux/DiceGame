@@ -6,3 +6,8 @@ let diceFace = [
     'img\five.svg',
     'img\six.svg'
 ]
+
+function showDiceFace(diceFaceUrl){
+    const diceFace = document.createElement('img')
+    diceFace.src = diceFaceUrl
+}
