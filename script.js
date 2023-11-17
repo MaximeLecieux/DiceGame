@@ -1,13 +1,8 @@
-let diceFace = [
-    'img\one.svg',
-    'img\two.svg',
-    'img\three.svg',
-    'img\four.svg',
-    'img\five.svg',
-    'img\six.svg'
-]
 
-function showDiceFace(diceFaceUrl){
-    const diceFace = document.createElement('img')
-    diceFace.src = diceFaceUrl
-}
+const rollButton = document.getElementById('rollButton')
+rollButton.addEventListener('click', function(){
+    let diceNumber = Math.floor(Math.random()*6 + 1)
+
+    const image = document.getElementById('image') //displays the image according to the number
+    image.src = 'img/dice_'+diceNumber+'.svg'
+})
